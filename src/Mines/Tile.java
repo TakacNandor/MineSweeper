@@ -1,15 +1,19 @@
 package Mines;
 
+import javax.net.ssl.SSLEngineResult.Status;
+
 public abstract class Tile {
 
-	boolean isMine;
-	boolean isMarked;
-	
-	/*public String vypis() {
-		return "T";
-	}*/
-	
-	
+	private TileStatus status;
+
+	public TileStatus getTileStatus() {
+		return status;
+	}
+
+	public void setTileStatus(TileStatus status) {
+		this.status = status;
+	}
+		
 	
 	
 }

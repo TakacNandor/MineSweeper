@@ -19,7 +19,7 @@ public class Launcher {
 		int mines = input.nextInt();
 		game.setNumberOfMines(mines);
 		
-		game.showField(game.createField());
+		game.showOpenedField(game.createField());
 
 	}
 
